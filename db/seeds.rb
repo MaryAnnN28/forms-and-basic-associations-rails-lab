@@ -160,3 +160,11 @@ genres = Hash[[
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
 
+artist1 = Artist.create(name: "Michael Buble")
+artist2 = Artist.create(name: "Beyonce")
+artist3 = Artist.create(name: "Cardi B")
+artist4 = Artist.create(name: "Taylor Swift")
+artist5 = Artist.create(name: "Rihanna")
+artist6 = Artist.create(name: "Justin Bieber")
+
+
