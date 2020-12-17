@@ -27,13 +27,11 @@ about various `Song`s. Our data model looks like this:
 
 ## Instructions
 
-1. The base models, controllers, and seed data have been provided for you.
-2. You should create and migrate the database before starting to develop your
-   solution.
-3. Seeding the database provides many `Genre`s. You will add data about
-   `Artist`s, `Note`s, and `Song`s during the development of this application.
-   The `ArtistsController` and `SongsController` have been built out so that you
-   can do this.
+1. The base models, controllers, and seed data have been provided for you.  
+
+<!-- 2. You should create and migrate the database before starting to develop your solution. -->
+
+3. Seeding the database provides many `Genre`s. You will add data about `Artist`s, `Note`s, and `Song`s during the development of this application. The `ArtistsController` and `SongsController` have been built out so that you can do this.
 
 First, connect the models by using the `ActiveRecord` association commands.
 
@@ -41,22 +39,17 @@ Next, update the minimal `app/views/songs/new.html.erb`.
 
 This view should have a form that provides:
 
-- A text input box that sets the `Song`'s title.
-- A text input box for the `Artist`.
-- A selection box for `Genre`. Users should be able to pick amongst existing genres only.
-- Several text input boxes to add notes to the song. These should have the IDs
-  `song_notes_1`, `song_notes_2`, and so on for the specs to pass.
+<!-- - A text input box that sets the `Song`'s title. -->
+<!-- - A text input box for the `Artist`.
+- A selection box for `Genre`. Users should be able to pick amongst existing genres only. -->
+- Several text input boxes to add notes to the song. These should have the IDs `song_notes_1`, `song_notes_2`, and so on for the specs to pass.
 
 This is a challenging lab. Here are some hints:
 
 - You might need to search around for how to pass an array using `strong_params`!
-- It's easy to get confused between getting an `Artist` _instance_ from a
-  `Song` and an `Artist`'s name. To help make your form work easier, solve the
-  `spec/models/song_spec.rb` _first_. You can run a single spec by invoking it
-  with e.g. `rspec spec/models/song_spec.rb`
+- It's easy to get confused between getting an `Artist` _instance_ from a `Song` and an `Artist`'s name. To help make your form work easier, solve the `spec/models/song_spec.rb` _first_. You can run a single spec by invoking it with e.g. `rspec spec/models/song_spec.rb`
 - Make use of the references below!
-- While we direct you to update `new.html.erb`, you're going to need to make
-  changes in multiple models and the `SongsController`.
+- While we direct you to update `new.html.erb`, you're going to need to make changes in multiple models and the `SongsController`.
 
 ## References
 
